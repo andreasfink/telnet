@@ -7,7 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A6DA65E01F1EC46600BBBD0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DA65DF1F1EC46600BBBD0F /* main.m */; };
+		A6DA65F31F1EC4BB00BBBD0F /* authenc.cc in Sources */ = {isa = PBXBuildFile; fileRef = A6DA65E61F1EC4BB00BBBD0F /* authenc.cc */; };
+		A6DA65F41F1EC4BB00BBBD0F /* commands.cc in Sources */ = {isa = PBXBuildFile; fileRef = A6DA65E71F1EC4BB00BBBD0F /* commands.cc */; };
+		A6DA65F51F1EC4BB00BBBD0F /* environ.cc in Sources */ = {isa = PBXBuildFile; fileRef = A6DA65E81F1EC4BB00BBBD0F /* environ.cc */; };
+		A6DA65F61F1EC4BB00BBBD0F /* genget.cc in Sources */ = {isa = PBXBuildFile; fileRef = A6DA65E91F1EC4BB00BBBD0F /* genget.cc */; };
+		A6DA65F71F1EC4BB00BBBD0F /* main.cc in Sources */ = {isa = PBXBuildFile; fileRef = A6DA65EA1F1EC4BB00BBBD0F /* main.cc */; };
+		A6DA65F81F1EC4BB00BBBD0F /* netlink.cc in Sources */ = {isa = PBXBuildFile; fileRef = A6DA65EB1F1EC4BB00BBBD0F /* netlink.cc */; };
+		A6DA65F91F1EC4BB00BBBD0F /* network.cc in Sources */ = {isa = PBXBuildFile; fileRef = A6DA65EC1F1EC4BB00BBBD0F /* network.cc */; };
+		A6DA65FA1F1EC4BB00BBBD0F /* ring.cc in Sources */ = {isa = PBXBuildFile; fileRef = A6DA65ED1F1EC4BB00BBBD0F /* ring.cc */; };
+		A6DA65FB1F1EC4BB00BBBD0F /* sys_bsd.cc in Sources */ = {isa = PBXBuildFile; fileRef = A6DA65EE1F1EC4BB00BBBD0F /* sys_bsd.cc */; };
+		A6DA65FC1F1EC4BB00BBBD0F /* telnet.cc in Sources */ = {isa = PBXBuildFile; fileRef = A6DA65EF1F1EC4BB00BBBD0F /* telnet.cc */; };
+		A6DA65FD1F1EC4BB00BBBD0F /* terminal.cc in Sources */ = {isa = PBXBuildFile; fileRef = A6DA65F01F1EC4BB00BBBD0F /* terminal.cc */; };
+		A6DA65FE1F1EC4BB00BBBD0F /* tn3270.cc in Sources */ = {isa = PBXBuildFile; fileRef = A6DA65F11F1EC4BB00BBBD0F /* tn3270.cc */; };
+		A6DA65FF1F1EC4BB00BBBD0F /* utilities.cc in Sources */ = {isa = PBXBuildFile; fileRef = A6DA65F21F1EC4BB00BBBD0F /* utilities.cc */; };
+		A6DA66101F1EC60B00BBBD0F /* libtermcap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A6DA660F1F1EC60B00BBBD0F /* libtermcap.dylib */; };
+		A6DA66331F1EC83500BBBD0F /* libtermcap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A6DA660F1F1EC60B00BBBD0F /* libtermcap.dylib */; };
+		A6DA66341F1EC84C00BBBD0F /* utility.c in Sources */ = {isa = PBXBuildFile; fileRef = A6DA66271F1EC7F300BBBD0F /* utility.c */; };
+		A6DA66351F1EC85000BBBD0F /* termstat.c in Sources */ = {isa = PBXBuildFile; fileRef = A6DA66261F1EC7F300BBBD0F /* termstat.c */; };
+		A6DA66361F1EC85300BBBD0F /* telnetd.c in Sources */ = {isa = PBXBuildFile; fileRef = A6DA66241F1EC7F300BBBD0F /* telnetd.c */; };
+		A6DA66371F1EC85700BBBD0F /* sys_term.c in Sources */ = {isa = PBXBuildFile; fileRef = A6DA66221F1EC7F300BBBD0F /* sys_term.c */; };
+		A6DA66381F1EC85A00BBBD0F /* state.c in Sources */ = {isa = PBXBuildFile; fileRef = A6DA66211F1EC7F300BBBD0F /* state.c */; };
+		A6DA66391F1EC85E00BBBD0F /* slc.c in Sources */ = {isa = PBXBuildFile; fileRef = A6DA66201F1EC7F300BBBD0F /* slc.c */; };
+		A6DA663A1F1EC86100BBBD0F /* setproctitle.c in Sources */ = {isa = PBXBuildFile; fileRef = A6DA661E1F1EC7F300BBBD0F /* setproctitle.c */; };
+		A6DA663B1F1EC87600BBBD0F /* authenc.c in Sources */ = {isa = PBXBuildFile; fileRef = A6DA66121F1EC7F300BBBD0F /* authenc.c */; };
+		A6DA663C1F1EC87900BBBD0F /* getent.c in Sources */ = {isa = PBXBuildFile; fileRef = A6DA66151F1EC7F300BBBD0F /* getent.c */; };
+		A6DA663D1F1EC87D00BBBD0F /* global.c in Sources */ = {isa = PBXBuildFile; fileRef = A6DA66161F1EC7F300BBBD0F /* global.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -20,11 +44,64 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		A6DA662A1F1EC80D00BBBD0F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A6DA65DC1F1EC46600BBBD0F /* telnet */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = telnet; sourceTree = BUILT_PRODUCTS_DIR; };
-		A6DA65DF1F1EC46600BBBD0F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A6DA65E61F1EC4BB00BBBD0F /* authenc.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = authenc.cc; sourceTree = "<group>"; };
+		A6DA65E71F1EC4BB00BBBD0F /* commands.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = commands.cc; sourceTree = "<group>"; };
+		A6DA65E81F1EC4BB00BBBD0F /* environ.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = environ.cc; sourceTree = "<group>"; };
+		A6DA65E91F1EC4BB00BBBD0F /* genget.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = genget.cc; sourceTree = "<group>"; };
+		A6DA65EA1F1EC4BB00BBBD0F /* main.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cc; sourceTree = "<group>"; };
+		A6DA65EB1F1EC4BB00BBBD0F /* netlink.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = netlink.cc; sourceTree = "<group>"; };
+		A6DA65EC1F1EC4BB00BBBD0F /* network.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = network.cc; sourceTree = "<group>"; };
+		A6DA65ED1F1EC4BB00BBBD0F /* ring.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ring.cc; sourceTree = "<group>"; };
+		A6DA65EE1F1EC4BB00BBBD0F /* sys_bsd.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sys_bsd.cc; sourceTree = "<group>"; };
+		A6DA65EF1F1EC4BB00BBBD0F /* telnet.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = telnet.cc; sourceTree = "<group>"; };
+		A6DA65F01F1EC4BB00BBBD0F /* terminal.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = terminal.cc; sourceTree = "<group>"; };
+		A6DA65F11F1EC4BB00BBBD0F /* tn3270.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tn3270.cc; sourceTree = "<group>"; };
+		A6DA65F21F1EC4BB00BBBD0F /* utilities.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = utilities.cc; sourceTree = "<group>"; };
+		A6DA66001F1EC4C500BBBD0F /* array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = array.h; sourceTree = "<group>"; };
+		A6DA66011F1EC4C500BBBD0F /* defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = defines.h; sourceTree = "<group>"; };
+		A6DA66021F1EC4C500BBBD0F /* environ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = environ.h; sourceTree = "<group>"; };
+		A6DA66031F1EC4C500BBBD0F /* externs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = externs.h; sourceTree = "<group>"; };
+		A6DA66041F1EC4C500BBBD0F /* fdset.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fdset.h; sourceTree = "<group>"; };
+		A6DA66051F1EC4C500BBBD0F /* general.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = general.h; sourceTree = "<group>"; };
+		A6DA66061F1EC4C500BBBD0F /* genget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = genget.h; sourceTree = "<group>"; };
+		A6DA66071F1EC4C500BBBD0F /* netlink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = netlink.h; sourceTree = "<group>"; };
+		A6DA66081F1EC4C500BBBD0F /* proto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = proto.h; sourceTree = "<group>"; };
+		A6DA66091F1EC4C500BBBD0F /* ptrarray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ptrarray.h; sourceTree = "<group>"; };
+		A6DA660A1F1EC4C500BBBD0F /* ring.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ring.h; sourceTree = "<group>"; };
+		A6DA660B1F1EC4C500BBBD0F /* terminal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = terminal.h; sourceTree = "<group>"; };
+		A6DA660C1F1EC4C500BBBD0F /* types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		A6DA660F1F1EC60B00BBBD0F /* libtermcap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libtermcap.dylib; path = ../../../../../usr/lib/libtermcap.dylib; sourceTree = "<group>"; };
+		A6DA66121F1EC7F300BBBD0F /* authenc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = authenc.c; sourceTree = "<group>"; };
+		A6DA66131F1EC7F300BBBD0F /* defs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = defs.h; sourceTree = "<group>"; };
+		A6DA66141F1EC7F300BBBD0F /* ext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ext.h; sourceTree = "<group>"; };
+		A6DA66151F1EC7F300BBBD0F /* getent.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = getent.c; sourceTree = "<group>"; };
+		A6DA66161F1EC7F300BBBD0F /* global.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = global.c; sourceTree = "<group>"; };
+		A6DA66191F1EC7F300BBBD0F /* logout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = logout.h; sourceTree = "<group>"; };
+		A6DA661A1F1EC7F300BBBD0F /* logwtmp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = logwtmp.h; sourceTree = "<group>"; };
+		A6DA661C1F1EC7F300BBBD0F /* pathnames.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pathnames.h; sourceTree = "<group>"; };
+		A6DA661E1F1EC7F300BBBD0F /* setproctitle.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = setproctitle.c; sourceTree = "<group>"; };
+		A6DA661F1F1EC7F300BBBD0F /* setproctitle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = setproctitle.h; sourceTree = "<group>"; };
+		A6DA66201F1EC7F300BBBD0F /* slc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = slc.c; sourceTree = "<group>"; };
+		A6DA66211F1EC7F300BBBD0F /* state.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = state.c; sourceTree = "<group>"; };
+		A6DA66221F1EC7F300BBBD0F /* sys_term.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sys_term.c; sourceTree = "<group>"; };
+		A6DA66241F1EC7F300BBBD0F /* telnetd.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = telnetd.c; sourceTree = "<group>"; };
+		A6DA66251F1EC7F300BBBD0F /* telnetd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = telnetd.h; sourceTree = "<group>"; };
+		A6DA66261F1EC7F300BBBD0F /* termstat.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = termstat.c; sourceTree = "<group>"; };
+		A6DA66271F1EC7F300BBBD0F /* utility.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = utility.c; sourceTree = "<group>"; };
+		A6DA662C1F1EC80D00BBBD0F /* telnetd */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = telnetd; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +109,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6DA66101F1EC60B00BBBD0F /* libtermcap.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6DA66291F1EC80D00BBBD0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6DA66331F1EC83500BBBD0F /* libtermcap.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,8 +127,10 @@
 		A6DA65D31F1EC46600BBBD0F = {
 			isa = PBXGroup;
 			children = (
+				A6DA66111F1EC7A800BBBD0F /* telnetd */,
 				A6DA65DE1F1EC46600BBBD0F /* telnet */,
 				A6DA65DD1F1EC46600BBBD0F /* Products */,
+				A6DA660F1F1EC60B00BBBD0F /* libtermcap.dylib */,
 			);
 			sourceTree = "<group>";
 		};
@@ -50,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				A6DA65DC1F1EC46600BBBD0F /* telnet */,
+				A6DA662C1F1EC80D00BBBD0F /* telnetd */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,9 +146,58 @@
 		A6DA65DE1F1EC46600BBBD0F /* telnet */ = {
 			isa = PBXGroup;
 			children = (
-				A6DA65DF1F1EC46600BBBD0F /* main.m */,
+				A6DA66001F1EC4C500BBBD0F /* array.h */,
+				A6DA66011F1EC4C500BBBD0F /* defines.h */,
+				A6DA66021F1EC4C500BBBD0F /* environ.h */,
+				A6DA66031F1EC4C500BBBD0F /* externs.h */,
+				A6DA66041F1EC4C500BBBD0F /* fdset.h */,
+				A6DA66051F1EC4C500BBBD0F /* general.h */,
+				A6DA66061F1EC4C500BBBD0F /* genget.h */,
+				A6DA66071F1EC4C500BBBD0F /* netlink.h */,
+				A6DA66081F1EC4C500BBBD0F /* proto.h */,
+				A6DA66091F1EC4C500BBBD0F /* ptrarray.h */,
+				A6DA660A1F1EC4C500BBBD0F /* ring.h */,
+				A6DA660B1F1EC4C500BBBD0F /* terminal.h */,
+				A6DA660C1F1EC4C500BBBD0F /* types.h */,
+				A6DA65E61F1EC4BB00BBBD0F /* authenc.cc */,
+				A6DA65E71F1EC4BB00BBBD0F /* commands.cc */,
+				A6DA65E81F1EC4BB00BBBD0F /* environ.cc */,
+				A6DA65E91F1EC4BB00BBBD0F /* genget.cc */,
+				A6DA65EA1F1EC4BB00BBBD0F /* main.cc */,
+				A6DA65EB1F1EC4BB00BBBD0F /* netlink.cc */,
+				A6DA65EC1F1EC4BB00BBBD0F /* network.cc */,
+				A6DA65ED1F1EC4BB00BBBD0F /* ring.cc */,
+				A6DA65EE1F1EC4BB00BBBD0F /* sys_bsd.cc */,
+				A6DA65EF1F1EC4BB00BBBD0F /* telnet.cc */,
+				A6DA65F01F1EC4BB00BBBD0F /* terminal.cc */,
+				A6DA65F11F1EC4BB00BBBD0F /* tn3270.cc */,
+				A6DA65F21F1EC4BB00BBBD0F /* utilities.cc */,
 			);
 			path = telnet;
+			sourceTree = "<group>";
+		};
+		A6DA66111F1EC7A800BBBD0F /* telnetd */ = {
+			isa = PBXGroup;
+			children = (
+				A6DA66121F1EC7F300BBBD0F /* authenc.c */,
+				A6DA66131F1EC7F300BBBD0F /* defs.h */,
+				A6DA66141F1EC7F300BBBD0F /* ext.h */,
+				A6DA66151F1EC7F300BBBD0F /* getent.c */,
+				A6DA66161F1EC7F300BBBD0F /* global.c */,
+				A6DA66191F1EC7F300BBBD0F /* logout.h */,
+				A6DA661A1F1EC7F300BBBD0F /* logwtmp.h */,
+				A6DA661C1F1EC7F300BBBD0F /* pathnames.h */,
+				A6DA661E1F1EC7F300BBBD0F /* setproctitle.c */,
+				A6DA661F1F1EC7F300BBBD0F /* setproctitle.h */,
+				A6DA66201F1EC7F300BBBD0F /* slc.c */,
+				A6DA66211F1EC7F300BBBD0F /* state.c */,
+				A6DA66221F1EC7F300BBBD0F /* sys_term.c */,
+				A6DA66241F1EC7F300BBBD0F /* telnetd.c */,
+				A6DA66251F1EC7F300BBBD0F /* telnetd.h */,
+				A6DA66261F1EC7F300BBBD0F /* termstat.c */,
+				A6DA66271F1EC7F300BBBD0F /* utility.c */,
+			);
+			path = telnetd;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +220,23 @@
 			productReference = A6DA65DC1F1EC46600BBBD0F /* telnet */;
 			productType = "com.apple.product-type.tool";
 		};
+		A6DA662B1F1EC80D00BBBD0F /* telnetd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6DA66301F1EC80D00BBBD0F /* Build configuration list for PBXNativeTarget "telnetd" */;
+			buildPhases = (
+				A6DA66281F1EC80D00BBBD0F /* Sources */,
+				A6DA66291F1EC80D00BBBD0F /* Frameworks */,
+				A6DA662A1F1EC80D00BBBD0F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = telnetd;
+			productName = telnetd;
+			productReference = A6DA662C1F1EC80D00BBBD0F /* telnetd */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +247,11 @@
 				ORGANIZATIONNAME = "Andreas Fink";
 				TargetAttributes = {
 					A6DA65DB1F1EC46600BBBD0F = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2GSNWPNR77;
+						ProvisioningStyle = Automatic;
+					};
+					A6DA662B1F1EC80D00BBBD0F = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 2GSNWPNR77;
 						ProvisioningStyle = Automatic;
@@ -111,6 +271,7 @@
 			projectRoot = "";
 			targets = (
 				A6DA65DB1F1EC46600BBBD0F /* telnet */,
+				A6DA662B1F1EC80D00BBBD0F /* telnetd */,
 			);
 		};
 /* End PBXProject section */
@@ -120,7 +281,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6DA65E01F1EC46600BBBD0F /* main.m in Sources */,
+				A6DA65F91F1EC4BB00BBBD0F /* network.cc in Sources */,
+				A6DA65FB1F1EC4BB00BBBD0F /* sys_bsd.cc in Sources */,
+				A6DA65F71F1EC4BB00BBBD0F /* main.cc in Sources */,
+				A6DA65FD1F1EC4BB00BBBD0F /* terminal.cc in Sources */,
+				A6DA65F31F1EC4BB00BBBD0F /* authenc.cc in Sources */,
+				A6DA65F61F1EC4BB00BBBD0F /* genget.cc in Sources */,
+				A6DA65F41F1EC4BB00BBBD0F /* commands.cc in Sources */,
+				A6DA65FC1F1EC4BB00BBBD0F /* telnet.cc in Sources */,
+				A6DA65F81F1EC4BB00BBBD0F /* netlink.cc in Sources */,
+				A6DA65FA1F1EC4BB00BBBD0F /* ring.cc in Sources */,
+				A6DA65FF1F1EC4BB00BBBD0F /* utilities.cc in Sources */,
+				A6DA65FE1F1EC4BB00BBBD0F /* tn3270.cc in Sources */,
+				A6DA65F51F1EC4BB00BBBD0F /* environ.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6DA66281F1EC80D00BBBD0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6DA66391F1EC85E00BBBD0F /* slc.c in Sources */,
+				A6DA663A1F1EC86100BBBD0F /* setproctitle.c in Sources */,
+				A6DA663C1F1EC87900BBBD0F /* getent.c in Sources */,
+				A6DA663B1F1EC87600BBBD0F /* authenc.c in Sources */,
+				A6DA66341F1EC84C00BBBD0F /* utility.c in Sources */,
+				A6DA66371F1EC85700BBBD0F /* sys_term.c in Sources */,
+				A6DA663D1F1EC87D00BBBD0F /* global.c in Sources */,
+				A6DA66351F1EC85000BBBD0F /* termstat.c in Sources */,
+				A6DA66381F1EC85A00BBBD0F /* state.c in Sources */,
+				A6DA66361F1EC85300BBBD0F /* telnetd.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +325,7 @@
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_MODULES = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -183,7 +373,7 @@
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_MODULES = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -220,6 +410,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 2GSNWPNR77;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -228,6 +419,27 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 2GSNWPNR77;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A6DA66311F1EC80D00BBBD0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = NO;
+				DEVELOPMENT_TEAM = 2GSNWPNR77;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A6DA66321F1EC80D00BBBD0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = NO;
+				DEVELOPMENT_TEAM = 2GSNWPNR77;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -249,6 +461,14 @@
 			buildConfigurations = (
 				A6DA65E41F1EC46600BBBD0F /* Debug */,
 				A6DA65E51F1EC46600BBBD0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A6DA66301F1EC80D00BBBD0F /* Build configuration list for PBXNativeTarget "telnetd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6DA66311F1EC80D00BBBD0F /* Debug */,
+				A6DA66321F1EC80D00BBBD0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

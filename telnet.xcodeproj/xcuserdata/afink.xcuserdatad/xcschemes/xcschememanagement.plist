@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>telnetd.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>A6DA65DB1F1EC46600BBBD0F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A6DA662B1F1EC80D00BBBD0F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
